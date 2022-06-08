@@ -1,0 +1,7 @@
+.row {
+  padding: 7px;
+}
+#mainPage {
+  display: table;
+  width: 350px;
+}
