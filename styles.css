@@ -5,3 +5,11 @@
   display: table;
   width: 350px;
 }
+input.currency {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.label {
+  background-color: antiquewhite;
+}
