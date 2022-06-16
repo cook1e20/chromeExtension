@@ -1,15 +1,18 @@
 .row {
-  padding: 7px;
+  padding: 0.25em 0em 0.25em 0em;
 }
 #mainPage {
   display: table;
-  width: 350px;
+  width: 400px;
 }
-input.currency {
+input {
   text-align: right;
-  padding-right: 15px;
+  padding-right: 0.1em;
 }
 
-.label {
-  background-color: antiquewhite;
+label {
+}
+
+.input-group {
+  padding-right: 0;
 }
