@@ -25,9 +25,7 @@ grossYield = (annualRent/price) *100;
 netYield = (annualProfit/price)*100;
 ROI=(annualProfit/invested)*100;
 
-
-
-document.getElementById("price").value = price; 
+document.getElementById("price").value = price
 document.getElementById("deposit").value = deposit; 
 document.getElementById("stampDuty").value = stampduty; 
 document.getElementById("additionalCosts").value = additionalCosts; 
@@ -41,6 +39,14 @@ document.getElementById("Insurance").value = insurance;
 document.getElementById("annualProfit").value = annualProfit;
 document.getElementById("Gross").value = Math.round((grossYield + Number.EPSILON) *100)/100;
 document.getElementById("Net").value = Math.round((netYield + Number.EPSILON) *100)/100;
-document.getElementById("ROI").value = Math.round((ROI + Number.EPSILON) *100)/100;;
+document.getElementById("ROI").value = Math.round((ROI + Number.EPSILON) *100)/100;
 
+document.getElementById("price").addEventListener("change", updatePrice);
+
+function updatePrice () {
+        price = document.getElementById("price").value;
+        document.getElementById("deposit").value = price*0.25;
+        stampduty = price*0.03;
+        console.log(price)
+};
 
