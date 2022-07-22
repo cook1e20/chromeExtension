@@ -50,3 +50,18 @@ function updatePrice () {
         console.log(price)
 };
 
+function calculateStampDuty (newPrice){
+        if (newPrice >= 40000){
+                return 0 
+        } else if(newPrice >= 125000) {
+
+        } else if(newPrice >= 250000) {
+
+        } else if(newPrice >= 925000) {
+
+        } else if(newPrice >= 1500000) {
+
+        } else {
+                
+        } 
+}
